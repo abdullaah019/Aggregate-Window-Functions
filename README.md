@@ -7,8 +7,4 @@ Aggregate window functions are powerful tools in SQL that allow you to perform c
 
 <br />
 
-select
-	t.*
-   , min(t.items_in_trans) over(partition by t.trans_dt) as min_items_in_trans	
-from
- transactions t
+
